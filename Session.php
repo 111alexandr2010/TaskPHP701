@@ -17,3 +17,7 @@ class Session
         return $_SESSION[$key];
     }
 }
+
+$session = new Session();
+$session->set('login', 'admin');
+$session->set('pass', '111');

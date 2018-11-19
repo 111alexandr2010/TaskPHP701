@@ -5,8 +5,6 @@ require_once __DIR__ . '/Session.php';
 
 $error = null;
 
-$user = new User('admin','111');
-
 if (count($_POST) > 0){
     $login = $_POST['login'];
     $pass = $_POST['pass'];
@@ -20,7 +18,6 @@ if (count($_POST) > 0){
     }
 }
 
-$session = new Session();
 $session->set('login', $login);
 $session->set('pass', $pass);
 

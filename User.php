@@ -25,3 +25,4 @@ class User
         $session->destroy();
     }
 }
+$user = new User('admin','111');

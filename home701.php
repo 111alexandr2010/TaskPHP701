@@ -4,11 +4,6 @@ require_once __DIR__ . '/User.php';
 require_once __DIR__ . '/Session.php';
 require_once __DIR__ . '/Calculator.php';
 
-$user = new User('admin','111');
-$session = new Session();
-$session->set('login', 'admin');
-$session->set('pass', '111');
-
 if (isset($_SESSION['login']) && isset($_SESSION['pass'])) {
     $login = $session->get('login');
     $pass = $session->get('pass');
