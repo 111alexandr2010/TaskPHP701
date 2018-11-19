@@ -2,14 +2,8 @@
 
 class User
 {
-    private $trueLogin;
-    private $truePassword;
-
-    public function __construct($login, $pass)
-    {
-        $this->trueLogin = $login;
-        $this->truePassword = $pass;
-    }
+    private $trueLogin = 'admin';
+    private $truePassword = '111';
 
     public function check($login, $pass)
     {
@@ -25,4 +19,4 @@ class User
         $session->destroy();
     }
 }
-$user = new User('admin','111');
+$user = new User();
