@@ -8,6 +8,7 @@ $error = null;
 if (count($_POST) > 0){
     $login = $_POST['login'];
     $pass = $_POST['pass'];
+    $user = new User();
 
     if ($user->check($login, $pass) === true){
         header('Location:/Task701/home701.php');
@@ -17,7 +18,7 @@ if (count($_POST) > 0){
         session_destroy();
     }
 }
-
+$session = new Session();
 $session->set('login', $login);
 $session->set('pass', $pass);
 

@@ -18,6 +18,3 @@ class Session
     }
 }
 
-$session = new Session();
-$session->set('login', 'admin');
-$session->set('pass', '111');

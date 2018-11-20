@@ -19,4 +19,3 @@ class User
         $session->destroy();
     }
 }
-$user = new User();
